@@ -1,0 +1,15 @@
+class paGeone():
+    count=0
+    def __init__(self,age,name):
+        self.age=age
+        self.name=name
+        paGeone.count +=1
+
+    @classmethod
+    def zonghe(cls):
+         return cls.count
+
+
+
+print(paGeone("13","wangshuai").zonghe())
+print(paGeone.count)
